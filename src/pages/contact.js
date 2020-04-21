@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 const Contact = () => (
   <div className="section" id="contact">
     <SEO title="Contact" />
-    <form name="contact" netlify>
+    <form name="contact" method="POST" data-netlify="true">
       <h3>let's get in touch</h3>
       <div className="formInputs">
         <div id="name">
