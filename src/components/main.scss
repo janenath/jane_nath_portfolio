@@ -84,10 +84,10 @@ footer {
     background: $indigo;
     color: white;
     @media (max-width: 1200px) {
-        height: 12em;
+        height: 10em;
     }
     @media (max-width: 700px) {
-        height: 10em;
+        height: 8em;
     }
 }
 .footerContainer {
@@ -167,7 +167,17 @@ input {
     width: 300px;
     border: 2px solid $indigo;
     font-size: 20px;
-    padding: 10px;
+    padding: 10px;    
+    @media (max-width: 1200px) {
+        width: 200px;
+        height: 20px;
+        font-size: 16px;
+    }
+    @media (max-width: 700px) {
+        width: 150px;
+        height: 10px;
+        font-size: 12px;
+    }
 }
 textarea {
     height: 200px;
@@ -176,6 +186,16 @@ textarea {
     padding: 10px;
     font-size: 20px;
     color: $indigo;
+    @media (max-width: 1200px) {
+        width: 200px;
+        height: 100px;
+        font-size: 16px;
+    }
+    @media (max-width: 700px) {
+        width: 150px;
+        height: 80px;
+        font-size: 12px;
+    }
 }
 .button {
     margin: 0 auto;
