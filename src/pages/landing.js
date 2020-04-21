@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 const Landing = () => (
   <div className="section" id="landing">
     <SEO title="Landing" />
-    <p>I am a full-stack software engineer and former nurse midwife dedicated to continuous learning, curiosity, and a growth-mindset.</p>
+    <p>Full-stack software engineer and former nurse midwife dedicated to continuous learning, curiosity, and a growth mindset. I leverage my skills in authentic communication and collaborative decision-making to promote a positive, innovative workplace environment. I love blending well-organized logic, carefully crafted design, and a healthy dose of creativity to solve complex problems and generate exceptional user experiences.</p>
   </div>
 )
 

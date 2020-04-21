@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <h3>software engineer</h3>
-      <FontAwesomeIcon icon={faBars}/>
+      <div className="navContainer"><FontAwesomeIcon icon={faBars}/></div>
     </div>
   </header>
 )
