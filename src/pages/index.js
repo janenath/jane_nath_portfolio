@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 
 import Landing from "./landing"
 import Resume from "./resume"
-import Projects from "./projects"
 import Contact from "./contact"
 
 const IndexPage = () => (
@@ -15,7 +14,6 @@ const IndexPage = () => (
     <div className="container">
       <Landing />
       <Resume />
-      <Projects />
       <Contact />
     </div>
   </Layout>
