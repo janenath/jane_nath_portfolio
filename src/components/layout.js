@@ -12,6 +12,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import "./main.scss"
 import Header from "./header"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin, faMedium, faGithub } from '@fortawesome/free-brands-svg-icons'
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -28,7 +32,17 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="main">{children}</div>
       <footer>
-        © {new Date().getFullYear()} Jane Nath
+        <div className="footerContainer">
+          <div className="iconContainer">
+            <a href="mailto:jane.e.nath@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a>
+            <a href="https://www.linkedin.com/in/janenath" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a>
+            <a href="https://www.github.com/janenath" target="_blank"><FontAwesomeIcon icon={faGithub}/></a>
+            <a href="https://medium.com/@jane.e.nath" target="_blank"><FontAwesomeIcon icon={faMedium}/></a>
+          </div>
+          <div className="copyright">
+            © {new Date().getFullYear()} jane nath
+          </div>
+        </div>
       </footer>
     </div>
   )
