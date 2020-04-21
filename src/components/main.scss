@@ -33,6 +33,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     border-top: 20px solid $green;
+
 }
 .hamburger {
     color: $green;
@@ -65,8 +66,17 @@ header {
     height: 100%;
     overflow: auto;
     line-height: 2em;
-    margin: 0 30%;
+    margin: 6% 30%;
     font-size: 20px;
+    @media (max-width: 1200px) {
+        margin: 6% 20%;
+        font-size: 16px;
+    }
+    @media (max-width: 700px) {
+        margin: 6% 10%;
+        font-size: 14px;
+    }
+
 }
 footer {
     width: 100%;
@@ -90,6 +100,12 @@ footer {
     a {
         padding: 0 0.7em;
     }
+    @media (max-width: 1200px) {
+       font-size: 3em;
+    }
+    @media (max-width: 700px) {
+        font-size: 2em;
+    }
 }
 .copyright {
     font-size: 15px;
@@ -102,12 +118,24 @@ h1 {
     a {
         text-decoration: none;
     }
+    @media (max-width: 1200px) {
+       font-size: 80px;
+    }
+    @media (max-width: 700px) {
+        font-size: 40px;
+    }
 }
 h3 {
     letter-spacing: .3em;
     font-size: 30px;
     margin-bottom: 1.5em;
     font-weight: 300;
+    @media (max-width: 1200px) {
+        font-size: 20px;
+     }
+     @media (max-width: 700px) {
+         font-size: 20px;
+     }
 }
 a {
     color: inherit;
@@ -162,14 +190,3 @@ button:hover {
     border: 2px solid $indigo;
     cursor: pointer;
 }
-// input {
-//     width: 300px;
-//     min-height: 50px;
-//     font-family: $font-stack;
-//     color: $indigo;
-//     font-size: 20px;
-// }
-// .message {
-//     height: 300px;
-//     width: 300px;
-// }

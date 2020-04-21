@@ -12,17 +12,17 @@ const Contact = () => (
         <div id="name">
           <label>name </label>
           <br/>
-          <input type="text" id="name" name="name"  placeholder="name"/>
+          <input type="text" id="name" name="name"/>
         </div>
         <div id="email">
           <label for="email">email</label>
           <br/>
-          <input type="email" id="email" name="email" placeholder="email"/>
+          <input type="email" id="email" name="email"/>
         </div>
         <div id="message">
           <label for="message">message</label>
           <br/>
-          <textarea id="message" name="message" placeholder="message"/>
+          <textarea id="message" name="message"/>
         </div>
       </div>   
       <div className="button">
