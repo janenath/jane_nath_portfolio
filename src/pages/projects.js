@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 
 const Projects = () => (
-  <div className="section">
+  <div className="section" id="projects">
     <SEO title="Projects" />
     <p>projects The decade that brought us Star Trek and Doctor Who also resurrected Cicero—or at least what used to be Cicero—in an attempt to make the days before computerized design a little less painstaking.
 

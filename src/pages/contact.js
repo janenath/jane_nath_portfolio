@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 
 const Contact = () => (
-  <div className="section">
+  <div className="section" id="contact">
     <SEO title="Contact" />
     <form name="contact" netlify>
       <h3>let's get in touch</h3>
