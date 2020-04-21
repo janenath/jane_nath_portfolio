@@ -12,10 +12,12 @@ import Contact from "./contact"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Landing />
-    <Resume />
-    <Projects />
-    <Contact />
+    <div className="container">
+      <Landing />
+      <Resume />
+      <Projects />
+      <Contact />
+    </div>
   </Layout>
 )
 

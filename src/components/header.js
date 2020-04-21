@@ -10,6 +10,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <h3>software engineer</h3>
     </div>
   </header>
 )
