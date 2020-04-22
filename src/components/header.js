@@ -29,7 +29,6 @@ export default class Header extends React.Component {
         <nav className={`navbar + ${this.state.navActive}`}> 
           <a href="#landing">home</a>
           <a href="#resume">resume</a>
-          <a href="#projects">projects</a>
           <a href="#contact">contact</a>
         </nav> 
     </header>

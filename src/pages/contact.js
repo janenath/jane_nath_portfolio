@@ -40,7 +40,6 @@ export default class Contact extends React.Component {
   render() {
     return(
       <div className="section" id="contact">
-      <SEO title="Contact" />
       <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
       <input type="hidden" name="form-name" value="contact" />
       <div hidden>

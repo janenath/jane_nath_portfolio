@@ -12,6 +12,36 @@ $green: #edf2ca;
     padding: 0;
     text-align: center;
 }
+h1 {
+    font-family: $heading-font;
+    font-size: 100px;
+    letter-spacing: .15em;
+    margin: 20px;
+    a {
+        text-decoration: none;
+    }
+    @media (max-width: 1200px) {
+       font-size: 80px;
+    }
+    @media (max-width: 700px) {
+        font-size: 40px;
+    }
+}
+h3 {
+    letter-spacing: .3em;
+    font-size: 30px;
+    margin-bottom: 1.5em;
+    font-weight: 300;
+    @media (max-width: 1200px) {
+        font-size: 20px;
+     }
+     @media (max-width: 700px) {
+         font-size: 20px;
+     }
+}
+a {
+    color: inherit;
+}
 body {
     height: 100%;
 }
@@ -26,6 +56,11 @@ body {
     height: 100%;
     position: absolute;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+}
+//header and nav
 header {
     width: 100%;
     max-height: 40vh;
@@ -59,6 +94,7 @@ header {
 .false {
     display: none;
 }
+//main
 .main {
     flex: 1;
     overflow: auto;
@@ -79,6 +115,7 @@ header {
     }
 
 }
+//footer
 footer {
     width: 100%;
     height: 15em;
@@ -117,40 +154,12 @@ footer {
 .copyright {
     font-size: 15px;
 }
-h1 {
-    font-family: $heading-font;
-    font-size: 100px;
-    letter-spacing: .15em;
-    margin: 20px;
-    a {
-        text-decoration: none;
-    }
-    @media (max-width: 1200px) {
-       font-size: 80px;
-    }
-    @media (max-width: 700px) {
-        font-size: 40px;
-    }
+//resume
+.resume {
+    border: 10px solid $green;
 }
-h3 {
-    letter-spacing: .3em;
-    font-size: 30px;
-    margin-bottom: 1.5em;
-    font-weight: 300;
-    @media (max-width: 1200px) {
-        font-size: 20px;
-     }
-     @media (max-width: 700px) {
-         font-size: 20px;
-     }
-}
-a {
-    color: inherit;
-}
-.container {
-    display: flex;
-    flex-direction: column;
-}
+
+//contact form
 form {
     display: flex;
     flex-direction: column;
