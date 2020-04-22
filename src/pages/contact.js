@@ -41,7 +41,7 @@ export default class Contact extends React.Component {
     return(
       <div className="section" id="contact">
       <SEO title="Contact" />
-      <form name="contact" method="post" action="/contact/thanks/" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
+      <form name="contact" method="post" action="/#landing" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
       <input type="hidden" name="form-name" value="contact" />
       <div hidden>
         <label>
@@ -52,19 +52,25 @@ export default class Contact extends React.Component {
         <h3>let's get in touch</h3>
         <div className="formInputs">
           <div id="name">
-            <label>name </label>
-            <br/>
-            <input type="text" id="name" name="name" onChange={this.handleChange}/>
+            <label>
+              name 
+              <br/>
+              <input type="text" id="name" name="name" onChange={this.handleChange}/>
+            </label>
           </div>
           <div id="email">
-            <label for="email">email</label>
-            <br/>
-            <input type="email" id="email" name="email" onChange={this.handleChange}/>
+            <label>
+              email
+              <br/>
+              <input type="email" id="email" name="email" onChange={this.handleChange}/>
+            </label> 
           </div>
           <div id="message">
-            <label for="message">message</label>
-            <br/>
-            <textarea id="message" name="message" onChange={this.handleChange}/>
+            <label>
+              message
+              <br/>
+              <textarea id="message" name="message" onChange={this.handleChange}/>
+            </label>
           </div>
         </div>   
         <div className="button">
