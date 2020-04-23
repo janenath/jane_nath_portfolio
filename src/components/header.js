@@ -23,14 +23,14 @@ export default class Header extends React.Component {
           </Link>
         </h1>
         <h3>software engineer</h3>
-        <div className="hamburger">
+        {/* <div className="hamburger">
           <FontAwesomeIcon icon={faBars} onClick={this.toggleNav}/>
         </div>
         <nav className={`navbar + ${this.state.navActive}`}> 
           <a href="#landing">home</a>
           <a href="#resume">resume</a>
           <a href="#contact">contact</a>
-        </nav> 
+        </nav>  */}
     </header>
     )
   }
