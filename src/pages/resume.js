@@ -16,7 +16,7 @@ const Resume = () => (
       <li>UI/UX design</li>
     </ul>
     <br/>
-    <h4>to learn more about my skills and background, <a href="https://drive.google.com/file/d/1OSBHlorantbXMKsWmYvLFzswEfjtb0p_/view?usp=sharing" target="_blank" download>download my resume</a></h4>
+    <h4>to learn more about my skills and background, <a href="https://drive.google.com/file/d/1P03qjuQfAkmDZdY6KPei3AjRlM6oFfHt/view?usp=sharing" target="_blank" download>download my resume</a></h4>
   </div>
 )
 
