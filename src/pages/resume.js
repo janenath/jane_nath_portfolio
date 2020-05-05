@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 
 const Resume = () => (
-  <div className="section resume" id="resume">
+  <div className="resume" id="resume">
    <h3>my top skills include:</h3>
    <ul>
       <li>JavaScript/ES6</li>
@@ -15,7 +15,6 @@ const Resume = () => (
       <li>CSS/Sass</li>
       <li>UI/UX design</li>
     </ul>
-    <br/>
     <h4>to learn more about my skills and background, <a href="https://drive.google.com/file/d/1OSBHlorantbXMKsWmYvLFzswEfjtb0p_/view?usp=sharing" target="_blank" download>download my resume</a></h4>
   </div>
 )

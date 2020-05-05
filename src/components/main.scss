@@ -4,42 +4,42 @@ $heading-font: 'Montserrat Alternates', helvetica, sans-serif;
 $font-stack: 'Raleway', helvetica, sans-serif;
 
 //colors
-$indigo: #505588;
-$green: #edf2ca;
+$indigo: #363342;
+$green: #C4B1AE;
+$white: #FEFFFE;
 
 * {
     margin: 0;
     padding: 0;
     text-align: center;
 }
+body {
+    background: $white;
+}
 h1 {
     font-family: $heading-font;
-    font-size: 100px;
+    font-size: 5em;
     letter-spacing: .15em;
     margin: 20px;
     a {
         text-decoration: none;
     }
+    @media (min-width: 1500px) {
+        font-size: 6em;
+    }
     @media (max-width: 1200px) {
-       font-size: 80px;
-       margin: 10px;
+        font-size: 4em;
     }
     @media (max-width: 700px) {
-        font-size: 40px;
+        font-size: 3em;
+        margin: 10px;
     }
 }
 h3 {
     letter-spacing: .3em;
-    font-size: 24px;
+    font-size: 1.3em;
     margin-bottom: 1.5em;
     font-weight: 300;
-    @media (max-width: 1200px) {
-        font-size: 20px;
-        margin-bottom: 1em;
-     }
-     @media (max-width: 700px) {
-         font-size: 14px;
-     }
 }
 a {
     color: inherit;
@@ -70,16 +70,19 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border-top: 20px solid $green;
-    border-bottom: 20px solid $green;
-    @media (max-width: 1200px) {
-        border-top: 15px solid $green;
-        border-top: 15px solid $green;
-    }
-    @media (max-width: 700px) {
-        border-top: 10px solid $green;
-        border-bottom: 10px solid $green;
-    }
+    background: $indigo;
+    color: white;
+    padding: 40px 0;
+    // border-top: 40px solid $green;
+    // border-bottom: 40px solid $green;
+    // @media (max-width: 1200px) {
+    //     border-top: 15px solid $green;
+    //     border-top: 15px solid $green;
+    // }
+    // @media (max-width: 700px) {
+    //     border-top: 10px solid $green;
+    //     border-bottom: 10px solid $green;
+    // }
 
 }
 .hamburger {
@@ -137,7 +140,7 @@ header {
     height: 100%;
     overflow: auto;
     line-height: 2em;
-    margin: 6% 30%;
+    margin: 10% 30%;
     font-size: 16px;
     @media (max-width: 1200px) {
         margin: 6% 20%;
@@ -198,10 +201,30 @@ footer {
 }
 //resume
 .resume {
-    border: 10px solid $green;
+    padding: 10% 0;
+    background: $green;
+    color: $white;
+    h3, h4 {
+        font-size: 1.5em;
+        margin: 5%;
+    }
+    li {
+        font-size: 1.3em;
+        margin-bottom: 0.5%;
+    }
+}
+
+//projects
+.projects {
+    margin: 10% 0;
 }
 
 //contact form
+.contact {
+    padding: 10% 0;
+    background: $green;
+    color: $white;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -210,16 +233,20 @@ form {
 .formInputs {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+.field {
+    margin-top: 10px;
 }
 input {
     color: $indigo;
+    text-align: left;
     margin-bottom: 20px;
     height: 30px;
     width: 300px;
     border: 2px solid $indigo;
-    font-size: 20px;
-    padding: 10px;    
+    font-size: 14px;
+    padding: 10px;  
+    margin-top: 10px;  
     @media (max-width: 1200px) {
         width: 200px;
         height: 20px;
@@ -236,8 +263,10 @@ textarea {
     width: 300px;
     border: 2px solid $indigo;
     padding: 10px;
-    font-size: 20px;
+    margin-top: 10px;
+    font-size: 14px;
     color: $indigo;
+    text-align: left;
     @media (max-width: 1200px) {
         width: 200px;
         height: 100px;
@@ -257,7 +286,7 @@ button {
     height: 60px;
     background: $indigo;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     border: none;
     border-radius: 50px;
     margin-top: 20px;    
