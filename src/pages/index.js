@@ -14,7 +14,7 @@ const IndexPage = () => (
     <div className="container">
       <Landing />
       <Resume />
-      {/* <Projects /> */}
+      <Projects />
       <Contact />
     </div>
   </Layout>
