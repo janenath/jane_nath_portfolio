@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const Resume = () => (
   <div className="resume" id="resume">
-   <h3>my top skills include:</h3>
+   <h2>my top skills include:</h2>
    <ul>
       <li>JavaScript/ES6</li>
       <li>React</li>

@@ -35,11 +35,27 @@ h1 {
         margin: 10px;
     }
 }
+h2 {
+    font-weight: bold;
+    font-size: 1.7em;
+    letter-spacing: .3em;
+    margin-bottom: 1.5em;
+}
 h3 {
     letter-spacing: .3em;
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin-bottom: 1.5em;
-    font-weight: 300;
+    font-weight: 500;
+}
+h4 {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin: 1.5em 0;
+}
+h5 {
+    font-size: 1.2em;
+    letter-spacing: .2em;
+    font-weight: 500;
 }
 a {
     color: inherit;
@@ -73,17 +89,6 @@ header {
     background: $indigo;
     color: white;
     padding: 40px 0;
-    // border-top: 40px solid $green;
-    // border-bottom: 40px solid $green;
-    // @media (max-width: 1200px) {
-    //     border-top: 15px solid $green;
-    //     border-top: 15px solid $green;
-    // }
-    // @media (max-width: 700px) {
-    //     border-top: 10px solid $green;
-    //     border-bottom: 10px solid $green;
-    // }
-
 }
 .hamburger {
     color: white;
@@ -201,29 +206,36 @@ footer {
 }
 //resume
 .resume {
-    padding: 10% 0;
+    padding: 10% 30%;
     background: $green;
-    color: $white;
-    h3, h4 {
-        font-size: 1.5em;
-        margin: 5%;
+    color: $indigo;
+    line-height: 2;
+
+    ul {
+        list-style: none;
+        background: $white;
+        border-radius: 50px;
+        padding: 50px 0;
     }
     li {
         font-size: 1.3em;
-        margin-bottom: 0.5%;
+        // margin-bottom: 1%;
+    }
+    a {
+        font-weight: bold;
     }
 }
 
 //projects
 .projects {
-    margin: 10% 0;
+    padding: 10%;
 }
 
 //contact form
 .contact {
-    padding: 10% 0;
+    padding: 10%;
     background: $green;
-    color: $white;
+    color: $indigo;
 }
 form {
     display: flex;
@@ -235,7 +247,8 @@ form {
     flex-direction: column;
 }
 .field {
-    margin-top: 10px;
+    margin-top: 20px;
+    font-size: 1.2em;
 }
 input {
     color: $indigo;
@@ -243,7 +256,8 @@ input {
     margin-bottom: 20px;
     height: 30px;
     width: 300px;
-    border: 2px solid $indigo;
+    border: 3px solid $indigo;
+    border-radius: 5px;
     font-size: 14px;
     padding: 10px;  
     margin-top: 10px;  
@@ -261,7 +275,7 @@ input {
 textarea {
     height: 200px;
     width: 300px;
-    border: 2px solid $indigo;
+    border: 3px solid $indigo;
     padding: 10px;
     margin-top: 10px;
     font-size: 14px;
@@ -278,18 +292,18 @@ textarea {
         font-size: 12px;
     }
 }
-.button {
-    margin: 0 auto;
-}
 button {
-    width: 100px;
-    height: 60px;
+    width: 150px;
+    height: 70px;
     background: $indigo;
     color: white;
     font-size: 16px;
     border: none;
     border-radius: 50px;
-    margin-top: 20px;    
+    margin-top: 40px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @media (max-width: 1200px) {
         width: 80px;
         height: 50px;

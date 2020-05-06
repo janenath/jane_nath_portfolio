@@ -48,7 +48,7 @@ export default class Contact extends React.Component {
           <input name="bot-field" onChange={this.handleChange} />
         </label>
       </div>
-        <h3>let's get in touch</h3>
+        <h2>let's get in touch</h2>
         <div className="formInputs">
           <div class="field" id="name">
             <label>
@@ -72,9 +72,9 @@ export default class Contact extends React.Component {
             </label>
           </div>
         </div>   
-        <div className="button">
-          <button type="submit">send</button>
-        </div>
+
+          <button type="submit"><h5>send</h5></button>
+
       </form>
     </div>
     )
