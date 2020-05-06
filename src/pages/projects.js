@@ -2,14 +2,44 @@ import React from "react"
 import { Link } from "gatsby"
 
 import SEO from "../components/seo"
+import fourth_trimester from "../images/fourth_trimester.png"
+import capsule from "../images/capsule.png"
+import plot_master from "../images/plot_master.png"
+import em from "../images/em.png"
 
 const Projects = () => (
   <div className="projects" id="projects">
-    <p>projects The decade that brought us Star Trek and Doctor Who also resurrected Cicero—or at least what used to be Cicero—in an attempt to make the days before computerized design a little less painstaking.
-
-The French lettering company Letraset manufactured a set of dry-transfer sheets which included the lorem ipsum filler text in a variety of fonts, sizes, and layouts. These sheets of lettering could be rubbed on anywhere and were quickly adopted by graphic artists, printers, architects, and advertisers for their professional look and ease of use.
-
-Aldus Corporation, which later merged with Adobe Systems, ushered lorem ipsum into the information age with its desktop publishing software Aldus PageMaker. The program came bundled with lorem ipsum dummy text for laying out page content, and other word processors like Microsoft Word followed suit. More recently the growth of web design has helped proliferate lorem ipsum across the internet as a placeholder for future text—and in some cases the final content (this is why we proofread, kids).</p>
+    <h2>Selected Projects</h2>
+    <div className="projectsGrid">
+      <div className="project one">
+        <a href="https://github.com/janenath/fourth_trimester" target="_blank">
+          <h5><span>Fourth Trimester</span> | Full-Stack App with React, Ruby on Rails</h5>
+          <br/>
+          <img src={fourth_trimester} alt="fourth trimester logo"></img>
+        </a>
+      </div>
+      <div className="project two">
+        <a href="https://github.com/janenath/capsule" target="_blank">
+          <h5><span>Capsule</span> | RESTful API with React, Ruby on Rails</h5>
+          <br/>
+          <img src={capsule} alt="capsule logo"></img>
+        </a>
+      </div>
+      <div className="project three">
+        <a href="https://github.com/janenath/plot-master" target="_blank">
+          <h5><span>Plot Master</span> | Full-Stack App with React, Node.js</h5>
+          <br/>
+          <img src={plot_master} alt="plot master logo"></img>
+        </a>
+      </div>
+      <div className="project four">
+        <a href="https://github.com/janenath/elias_miller" target="_blank">
+          <h5><span>EM Portfolio</span> | Jamstack App with Gatsby, Contentful</h5>
+          <br/>
+          <img src={em} alt="elias miller portfolio"></img>
+        </a>
+      </div>
+    </div>
   </div>
 )
 

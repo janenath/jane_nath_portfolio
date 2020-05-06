@@ -239,6 +239,68 @@ footer {
 .projects {
     padding: 10%;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+.projectsGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+    justify-content: center;
+}
+.project {
+    height: 300px;
+    border-radius: 50px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px $pink solid;
+    margin: 10px;
+    span {
+        font-weight: bold;
+    }
+    @media (max-width: 1200px) {
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+     }
+     @media (max-width: 700px) {
+        height: 150px;
+        width: 130px;
+        margin: 5px;
+     }
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    h5 {
+        margin-top: 10px;
+        padding: 0 10px;
+        @media (max-width: 1200px) {
+            font-size: .8em;
+            margin-top: 5px;
+         }
+         @media (max-width: 700px) {
+            font-size: .3em;
+         }
+    }
+    img {
+        margin-top: 10px;
+        height: 200px;
+        border-radius: 0px;
+        @media (max-width: 1200px) {
+           height: 80px;
+           margin-top: 0;
+        }
+        @media (max-width: 700px) {
+            height: 60px;
+        }
+    }
 }
 
 //contact form
