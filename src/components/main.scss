@@ -90,55 +90,55 @@ header {
     color: white;
     padding: 40px 0;
 }
-.hamburger {
-    color: white;
-    font-size: 40px;
-    padding: 10px;
-    width: 100%;
-    background: $green;
-    @media (max-width: 1200px) {
-        font-size: 30px;
-    }
-    @media (max-width: 700px) {
-        font-size: 20px;
-    }
-}
-.navbar {
-    font-size: 20px;
-    width: 100%;
-    padding: 40px;
-    a {
-        margin: 10px;
-        text-decoration: none;
-    }
-    @media (max-width: 1200px) {
-        font-size: 16px;
-        padding: 20px;
-        a {
-            margin: 6px;
-        }
-    }
-    @media (max-width: 700px) {
-        font-size: 12px;
-        padding: 10px;
-        a {
-            margin: 4px;
-        }
-    }
+// .hamburger {
+//     color: white;
+//     font-size: 40px;
+//     padding: 10px;
+//     width: 100%;
+//     background: $green;
+//     @media (max-width: 1200px) {
+//         font-size: 30px;
+//     }
+//     @media (max-width: 700px) {
+//         font-size: 20px;
+//     }
+// }
+// .navbar {
+//     font-size: 20px;
+//     width: 100%;
+//     padding: 40px;
+//     a {
+//         margin: 10px;
+//         text-decoration: none;
+//     }
+//     @media (max-width: 1200px) {
+//         font-size: 16px;
+//         padding: 20px;
+//         a {
+//             margin: 6px;
+//         }
+//     }
+//     @media (max-width: 700px) {
+//         font-size: 12px;
+//         padding: 10px;
+//         a {
+//             margin: 4px;
+//         }
+//     }
     
-}
-.true {
-    grid-area: nav;
-    display: grid;
-    background: $indigo;
-    color: white;
-}
-.false {
-    display: none;
-}
+// }
+// .true {
+//     grid-area: nav;
+//     display: grid;
+//     background: $indigo;
+//     color: white;
+// }
+// .false {
+//     display: none;
+// }
 //main
 .main {
-    flex: 1;
+    flex: 1 1;
     overflow: auto;
 }
 .section {
@@ -148,11 +148,11 @@ header {
     margin: 10% 30%;
     font-size: 16px;
     @media (max-width: 1200px) {
-        margin: 6% 20%;
+        margin: 10% 20%;
         font-size: 14px;
     }
     @media (max-width: 700px) {
-        margin: 6% 10%;
+        margin: 10% 10%;
         font-size: 12px;
     }
 
@@ -206,16 +206,26 @@ footer {
 }
 //resume
 .resume {
-    padding: 10% 30%;
+    padding: 10%;
+    overflow: auto;
     background: $green;
     color: $indigo;
     line-height: 2;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     ul {
         list-style: none;
         background: $white;
         border-radius: 50px;
-        padding: 50px 0;
+        padding: 50px 20px;
+        width: 40%;
+        @media (max-width: 1200px) {
+            width: 60%;
+        }
+        @media (max-width: 700px) {
+            width: 80%;
+        }
     }
     li {
         font-size: 1.3em;
@@ -229,11 +239,13 @@ footer {
 //projects
 .projects {
     padding: 10%;
+    overflow: auto;
 }
 
 //contact form
 .contact {
     padding: 10%;
+    overflow: auto;
     background: $green;
     color: $indigo;
 }
@@ -305,13 +317,13 @@ button {
     justify-content: center;
     align-items: center;
     @media (max-width: 1200px) {
-        width: 80px;
-        height: 50px;
+        width: 120px;
+        height: 60px;
         font-size: 16px;
     }
     @media (max-width: 700px) {
-        width: 60px;
-        height: 40px;
+        width: 100px;
+        height: 50px;
         font-size: 12px;
     }
 }
